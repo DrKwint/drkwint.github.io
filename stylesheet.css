@@ -91,7 +91,14 @@ strong {
 
 heading {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 22px;
+  font-size: 24px;
+  color: #E27D60;
+}
+
+subheading {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 18px;
+  font-style: oblique;
 }
 
 papertitle {
@@ -128,4 +135,31 @@ name {
 
 span.highlight {
   background-color: #ffffd0;
+}
+
+.col-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.leftcol {
+  flex: 0.30;
+  min-width: 200px;
+  padding: 12px;
+}
+
+.leftimg {
+  max-width:200px;
+  max-height: 150px;
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.col {
+  flex: 1;
+  padding: 12px;
 }
