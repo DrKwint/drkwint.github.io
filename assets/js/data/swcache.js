@@ -17,13 +17,15 @@ const resource = [
   '/index.html',
   '/404.html',
   
+    '/about/',
+  
+    '/publications/',
+  
     '/categories/',
   
     '/tags/',
   
     '/archives/',
-  
-    '/about/',
   
     '/curriculum_vitae/',
   
