@@ -34,23 +34,25 @@
 
   <!-- Begin Jekyll SEO tag v2.7.1 -->
 <meta name="generator" content="Jekyll v4.2.1" />
-<meta property="og:title" content="Eleanor Quint" />
+<meta property="og:title" content="Following Along with UIC’s CS 598 PROOF AUTOMATION" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="Academic website and blog of Eleanor Quint" />
-<meta property="og:description" content="Academic website and blog of Eleanor Quint" />
-<link rel="canonical" href="http://localhost:4000/" />
-<meta property="og:url" content="http://localhost:4000/" />
+<meta name="description" content="Dr. Talia Ringer is teaching a course on proof automation at the University of Illinois at Urbana-Champaign. I’ve been a programming language nerd since dabbling with Haskell and the like in undergrad, and I’m very interested in the whole area of “proving things about computation”. Naturally, this falls squarely into that intersection, so I’m going to be following along with the course as best as I can manage this semester. This ongoing blog post will be where I post my notes, thoughts, and some solutions (only the non-directly-copyable sort)." />
+<meta property="og:description" content="Dr. Talia Ringer is teaching a course on proof automation at the University of Illinois at Urbana-Champaign. I’ve been a programming language nerd since dabbling with Haskell and the like in undergrad, and I’m very interested in the whole area of “proving things about computation”. Naturally, this falls squarely into that intersection, so I’m going to be following along with the course as best as I can manage this semester. This ongoing blog post will be where I post my notes, thoughts, and some solutions (only the non-directly-copyable sort)." />
+<link rel="canonical" href="http://localhost:4000/posts/proof_automation/" />
+<meta property="og:url" content="http://localhost:4000/posts/proof_automation/" />
 <meta property="og:site_name" content="Eleanor Quint" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-01-03T00:00:00-06:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Eleanor Quint" />
+<meta property="twitter:title" content="Following Along with UIC’s CS 598 PROOF AUTOMATION" />
 <meta name="twitter:site" content="@EtherealEq" />
 <meta name="google-site-verification" content="google_meta_tag_verification" />
 <script type="application/ld+json">
-{"headline":"Eleanor Quint","sameAs":["https://twitter.com/EtherealEq","https://github.com/drkwint"],"url":"http://localhost:4000/","@type":"WebSite","description":"Academic website and blog of Eleanor Quint","name":"Eleanor Quint","@context":"https://schema.org"}</script>
+{"headline":"Following Along with UIC’s CS 598 PROOF AUTOMATION","dateModified":"2022-01-03T00:00:00-06:00","datePublished":"2022-01-03T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/proof_automation/"},"url":"http://localhost:4000/posts/proof_automation/","@type":"BlogPosting","description":"Dr. Talia Ringer is teaching a course on proof automation at the University of Illinois at Urbana-Champaign. I’ve been a programming language nerd since dabbling with Haskell and the like in undergrad, and I’m very interested in the whole area of “proving things about computation”. Naturally, this falls squarely into that intersection, so I’m going to be following along with the course as best as I can manage this semester. This ongoing blog post will be where I post my notes, thoughts, and some solutions (only the non-directly-copyable sort).","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>Eleanor Quint
+  <title>Following Along with UIC's CS 598 PROOF AUTOMATION | Eleanor Quint
   </title>
 
   <!--
@@ -96,7 +98,13 @@
 <link rel="stylesheet" href="/assets/css/style.css">
 
 
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css">
 
+
+
+  <!-- Manific Popup -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.min.css">
 
 
 
@@ -265,7 +273,7 @@
   <ul class="w-100">
 
     <!-- home -->
-    <li class="nav-item active">
+    <li class="nav-item">
       <a href="/" class="nav-link">
         <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"></i>
         <span>HOME</span>
@@ -401,8 +409,33 @@
     
 
     
-      <!-- index page -->
-      <span>Home</span>
+
+      
+
+        
+          <span>
+            <a href="/">
+              Home
+            </a>
+          </span>
+
+        
+
+      
+
+        
+
+      
+
+        
+
+          
+            <span>Following Along with UIC's CS 598 PROOF AUTOMATION</span>
+          
+
+        
+
+      
 
     
 
@@ -411,7 +444,7 @@
     <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
 
     <div id="topbar-title">
-      Eleanor Quint
+      Post
     </div>
 
     <i id="search-trigger" class="fas fa-search fa-fw"></i>
@@ -445,60 +478,179 @@
     
       
       
+        <!--
+  Refactor the HTML structure.
+-->
+
+
+
+<!--
+  In order to allow a wide table to scroll horizontally,
+  we suround the markdown table with `<div class="table-wrapper">` and `</div>`
+-->
+
+
+
+<!--
+  Fixed kramdown code highlight rendering:
+  https://github.com/penibelst/jekyll-compress-html/issues/101
+  https://github.com/penibelst/jekyll-compress-html/issues/71#issuecomment-188144901
+-->
+
+
+
+<!-- Add attribute 'hide-bullet' to the checkbox list -->
+
+
+
+<!-- images -->
+
+
+
+
+
+<!-- Add header for code snippets -->
+
+
+
+<!-- Create heading anchors -->
+
+
+
+
+
+  
+  
+
+  
+    
+    
+
+    
+      
         
-
-
-
-
-
-
-
-
-<!-- Get pinned posts -->
-
-
-
-
-
-
-
-<!-- Get default posts -->
-
-
-
-
-
-
-
-
-
-
-<div id="post-list">
-
-
-
-  <div class="post-preview">
-    <h1>
-      <a href="/posts/proof_automation/">Following Along with UIC's CS 598 PROOF AUTOMATION</a>
-    </h1>
-
-    <div class="post-content">
-      <p>
         
+      
+
+      
+      
+
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+
+      
+
+    
+
+    
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+
+      
+
+    
+
+    
+
+  
+
+  
+  
+
+  
+
+
+
+
+<!-- return -->
 
 
 
 
 
-        Dr. Talia Ringer is teaching a course on proof automation at the University of Illinois at Urbana-Champaign. I’ve been a programming language nerd since dabbling with Haskell and the like in underg...
-      </p>
-    </div>
 
-    <div class="post-meta text-muted d-flex">
 
-      <div class="mr-auto">
-        <!-- posted date -->
-        <i class="far fa-calendar fa-fw"></i>
+<h1 data-toc-skip>Following Along with UIC's CS 598 PROOF AUTOMATION</h1>
+
+<div class="post-meta text-muted">
+
+  <!-- author -->
+  <div>
+    
+    
+
+    
+
+    By
+    <em>
+      
+        <a href="https://twitter.com/EtherealEq">Eleanor Quint</a>
+      
+    </em>
+  </div>
+
+  <div class="d-flex">
+    <div>
+      <!-- published date -->
+      <span>
+        Posted
         <!--
   Date format snippet
   See: ${JS_ROOT}/utils/timeago.js
@@ -516,10 +668,13 @@
       title="Mon, Jan  3, 2022, 12:00 AM -0600"
     >Jan  3</em>
 
+      </span>
 
-        <!-- time to read -->
-        <i class="far fa-clock fa-fw"></i>
-        <!--
+      <!-- lastmod date -->
+      
+
+      <!-- read time -->
+      <!--
   Calculate the post's reading time, and display the word count in tooltip
  -->
 
@@ -539,167 +694,124 @@
 <!-- return element -->
 <span class="readtime" data-toggle="tooltip" data-placement="bottom"
   title="552 words">
-  <em>3 min</em></span>
+  <em>3 min</em> read</span>
 
 
-        <!-- categories -->
-        
-          <i class="far fa-folder-open fa-fw"></i>
-          <span>
-          
-            Proof Automation
-          </span>
-        
-      </div>
-
+      <!-- page views -->
       
-
-    </div> <!-- .post-meta -->
-
-  </div> <!-- .post-review -->
-
-
-
-  <div class="post-preview">
-    <h1>
-      <a href="/posts/starsets/">Star Sets</a>
-    </h1>
-
-    <div class="post-content">
-      <p>
-        
-
-
-
-
-
-        The star set, introduced in (Tran et al., 2019), is a construction that is central to my work right now, so I wrote up this tutorial to help explain it in a simple, motivated way to my collaborator...
-      </p>
     </div>
 
-    <div class="post-meta text-muted d-flex">
+  </div> <!-- .d-flex -->
 
-      <div class="mr-auto">
-        <!-- posted date -->
-        <i class="far fa-calendar fa-fw"></i>
-        <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/timeago.js
--->
+</div> <!-- .post-meta -->
 
+<div class="post-content">
+  <p><a href="https://dependenttyp.es/">Dr. Talia Ringer</a> is teaching a <a href="https://dependenttyp.es/classes/598sp2022.html">course on proof automation</a> at the University of Illinois at Urbana-Champaign. I’ve been a programming language nerd since dabbling with Haskell and the like in undergrad, and I’m very interested in the whole area of “proving things about computation”. Naturally, this falls squarely into that intersection, so I’m going to be following along with the course as best as I can manage this semester. This ongoing blog post will be where I post my notes, thoughts, and some solutions (only the non-directly-copyable sort).</p>
 
+<h2 id="homework-1">Homework 1<a href="#homework-1" class="anchor"><i class="fas fa-hashtag"></i></a></h2></h2>
 
+<p>Chapters 1 and 3 of QED at Large: A Survey of Engineering of Formally Verified Software by Talia Ringer, Karl Palmskog, Ilya Sergey, Milos Gligoric, and Zachary Tatlock.</p>
 
+<h4 id="reading-thoughts">Reading Thoughts:<a href="#reading-thoughts" class="anchor"><i class="fas fa-hashtag"></i></a></h4></h4>
+<p>The reading assignment served as a good introduction to the history of interactive verification. I think would have liked some companion pieces on the real and potential broader impacts of verification in the world. That would have felt more complete in an “end-to-end” sense and helped me get excited about the topic.</p>
 
-<em class="timeago"
-    date="2021-09-21 00:00:00 -0500"
+<p>I have one question about the paper: what is the difference between program verifiers and the application of proof assistants to verifying programs? Section 1.2 of the paper discusses its scope, and notes that it will focus on the latter, but not the former. I’m unsure of the relationship between the topics specifically omitted from the scope, i.e. program verifiers, theorem provers, and constraint solvers, and the topic of focus, proof assistants in the context of software engineering.</p>
+
+<h4 id="homework-prompt">Homework Prompt:<a href="#homework-prompt" class="anchor"><i class="fas fa-hashtag"></i></a></h4></h4>
+<p>Section 3.3 lists exactly one machine learning system that has been verified in a proof assistant. Based on what you know so far, do you think there is much hope for verifying state-of-the-art machine learning systems inside of a proof assistant? If so, why and how? And if not, what do you think it would take to be able to formally verify state-of-the-art machine learning systems?</p>
+
+<h4 id="response">Response:<a href="#response" class="anchor"><i class="fas fa-hashtag"></i></a></h4></h4>
+<p>In short, if “state-of-the-art” refers to the darlings of the machine learning research community, I don’t think they will be touched by formal verification in any meaningful way for a long time. On the other hand, if state-of-the-art simply means the models being employed today on real problems, then I think there’s a lot more hope. The central problem with the models being studied by the ML research community (e.g., transformers and large language models), is the enchantment the ML community has with increasingly large parameter counts and increasingly sophisticated architectures. This trend makes reasoning about these models more and more difficult as it progresses, outpacing the progress of the verification community. What is needed in this context is time for computing resources and software to catch up. On the other hand, where the size of a model can be kept reasonable, and its use is sufficiently sensitive so as to warrant more effort on verification (e.g., medicine, cyber-physical systems), I think that it is possible to define specific properties that models must satisfy and to define the models themselves as well as their settings in a concrete enough way so as to be amenable to being formally reasoned about. I think a next step in this direction is in the intersection of formal reasoning and probability, as proving properties of statistical machine learning models can be prohibitively computationally expensive.</p>
+
+<h2 id="homework-2">Homework 2<a href="#homework-2" class="anchor"><i class="fas fa-hashtag"></i></a></h2></h2>
+
+</div>
+
+<div class="post-tail-wrapper text-muted">
+
+  <!-- categories -->
+  
+  <div class="post-meta mb-3">
+    <i class="far fa-folder-open fa-fw mr-1"></i>
     
-      data-toggle="tooltip"
-      data-placement="bottom"
-      title="Tue, Sep 21, 2021, 12:00 AM -0500"
-    >Sep 21, 2021</em>
+      <a href='/categories/proof-automation/'>Proof Automation</a>
+  </div>
+  
 
+  <!-- tags -->
+  
+  <div class="post-tags">
+    <i class="fa fa-tags fa-fw mr-1"></i>
+      
+      <a href="/tags/verification/"
+          class="post-tag no-text-decoration" >verification</a>
+      
+      <a href="/tags/proof-assistants/"
+          class="post-tag no-text-decoration" >proof assistants</a>
+      
+  </div>
+  
 
-        <!-- time to read -->
-        <i class="far fa-clock fa-fw"></i>
-        <!--
-  Calculate the post's reading time, and display the word count in tooltip
- -->
-
-
-
-<!-- words per minute  -->
-
-
-
-
-
-
-
-
-
-
-<!-- return element -->
-<span class="readtime" data-toggle="tooltip" data-placement="bottom"
-  title="417 words">
-  <em>2 min</em></span>
-
-
-        <!-- categories -->
-        
-          <i class="far fa-folder-open fa-fw"></i>
-          <span>
-          
-            Tutorials
-          </span>
-        
-      </div>
+  <div class="post-tail-bottom
+    d-flex justify-content-between align-items-center mt-3 pt-5 pb-2">
+    <div class="license-wrapper">
 
       
 
-    </div> <!-- .post-meta -->
+        
 
-  </div> <!-- .post-review -->
+        This post is licensed under 
+        <a href="https://creativecommons.org/licenses/by/4.0/">
+          CC BY 4.0
+        </a>
+         by the author.
 
+      
+    </div>
 
-
-</div> <!-- #post-list -->
-
-
-  <!--
-  The paginator for post list on HomgPage.
+    <!--
+ Post sharing snippet
 -->
 
-<ul class="pagination align-items-center mt-4 mb-0 pl-lg-2">
-  <!-- left arrow -->
-  
-
-  <li class="page-item disabled">
-    <a class="page-link btn-box-shadow" href="#" aria-label="previous-page">
-      <i class="fas fa-angle-left"></i>
-    </a>
-  </li>
-
-  <!-- page numbers -->
-  
-  
-
-  
-
-    
-    
-    
+<div class="share-wrapper">
+  <span class="share-label text-muted mr-1">Share</span>
+  <span class="share-icons">
     
     
 
     
-
+      
+        <a href="https://twitter.com/intent/tweet?text=Following Along with UIC's CS 598 PROOF AUTOMATION - Eleanor Quint&url=http://localhost:4000/posts/proof_automation/" data-toggle="tooltip" data-placement="top"
+          title="Twitter" target="_blank" rel="noopener" aria-label="Twitter">
+          <i class="fa-fw fab fa-twitter"></i>
+        </a>
     
-      <!-- show number -->
-      <li class="page-item  active">
-        <a class="page-link btn-box-shadow" href="/">1</a>
-      </li>
+      
+        <a href="https://www.facebook.com/sharer/sharer.php?title=Following Along with UIC's CS 598 PROOF AUTOMATION - Eleanor Quint&u=http://localhost:4000/posts/proof_automation/" data-toggle="tooltip" data-placement="top"
+          title="Facebook" target="_blank" rel="noopener" aria-label="Facebook">
+          <i class="fa-fw fab fa-facebook-square"></i>
+        </a>
+    
+      
+        <a href="https://telegram.me/share?text=Following Along with UIC's CS 598 PROOF AUTOMATION - Eleanor Quint&url=http://localhost:4000/posts/proof_automation/" data-toggle="tooltip" data-placement="top"
+          title="Telegram" target="_blank" rel="noopener" aria-label="Telegram">
+          <i class="fa-fw fab fa-telegram"></i>
+        </a>
     
 
-  
+    <i id="copy-link" class="fa-fw fas fa-link small"
+        data-toggle="tooltip" data-placement="top"
+        title="Copy link"
+        title-succeed="Link copied successfully!">
+    </i>
 
-  <!-- mobile pagination -->
-  <li class="page-index align-middle">
-    <span>1</span>
-    <span class="text-muted">/ 1</span>
-  </li>
+  </span>
+</div>
 
-  <!-- right arrow -->
-  
 
-  <li class="page-item disabled">
-    <a class="page-link btn-box-shadow" href="#" aria-label="next-page">
-      <i class="fas fa-angle-right"></i>
-    </a>
-  </li>
+  </div><!-- .post-tail-bottom -->
 
-</ul> <!-- .pagination -->
-
+</div><!-- div.post-tail-wrapper -->
 
 
       
@@ -813,11 +925,170 @@
     </div>
 
     
+      
+      
+
+
+
+<!-- BS-toc.js will be loaded at medium priority -->
+<script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script>
+
+<div id="toc-wrapper" class="pl-0 pr-4 mb-5">
+  <div class="panel-heading pl-3 pt-2 mb-2">Contents</div>
+  <nav id="toc" data-toggle="toc"></nav>
+</div>
+
+
+    
   </div>
 
 </div>
 
 <!-- tail -->
+
+<div class="row">
+  <div class="col-12 col-lg-11 col-xl-8">
+    <div id="tail-wrapper" class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4">
+      
+        
+        <!--
+ Recommend the other 3 posts according to the tags and categories of the current post,
+ if the number is not enough, use the other latest posts to supplement.
+-->
+
+<!-- The total size of related posts  -->
+
+
+<!-- An random integer that bigger than 0  -->
+
+
+<!-- Equals to TAG_SCORE / {max_categories_hierarchy}  -->
+
+
+
+
+
+
+
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+<!-- Fill with the other newlest posts  -->
+
+
+
+
+  
+    
+    
+  
+    
+    
+      
+      
+    
+  
+
+
+
+
+
+  <div id="related-posts" class="mt-5 mb-2 mb-sm-4">
+    <h3 class="pt-2 mt-1 mb-4 ml-1"
+      data-toc-skip>Further Reading</h3>
+    <div class="card-deck mb-4">
+    
+      
+      
+      <div class="card">
+        <a href="/posts/starsets/">
+          <div class="card-body">
+            <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/timeago.js
+-->
+
+
+
+
+
+<em class="timeago small"
+    date="2021-09-21 00:00:00 -0500"
+    >Sep 21, 2021</em>
+
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Star Sets</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                The star set, introduced in (Tran et al., 2019), is a construction that is central to my work right now, so I wrote up this tutorial to help explain it in a simple, motivated way to my collaborator...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    
+    </div> <!-- .card-deck -->
+  </div> <!-- #related-posts -->
+
+
+      
+        
+        <!--
+  Navigation buttons at the bottom of the post.
+-->
+
+<div class="post-navigation d-flex justify-content-between">
+  
+  <a href="/posts/starsets/" class="btn btn-outline-primary"
+    prompt="Older">
+    <p>Star Sets</p>
+  </a>
+  
+
+  
+  <span class="btn btn-outline-primary disabled"
+    prompt="Newer">
+    <p>-</p>
+  </span>
+  
+
+</div>
+
+      
+        
+        <!--  The comments switcher -->
+
+
+      
+    </div>
+  </div>
+</div> <!-- .row -->
 
 
 
@@ -1008,13 +1279,18 @@ SimpleJekyllSearch({
 <!-- layout specified -->
 
 
+  
+
+
+
+  <!-- image lazy-loading & popup -->
+  <script src="https://cdn.jsdelivr.net/combine/npm/lozad/dist/lozad.min.js,npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/clipboard@2/dist/clipboard.min.js"></script>
 
 
 
 
 
-
-<script defer src="/assets/js/dist/home.min.js"></script>
+<script defer src="/assets/js/dist/post.min.js"></script>
 
 
 

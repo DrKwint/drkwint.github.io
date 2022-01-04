@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Eleanor Quint</title>
   <subtitle>Academic website and blog of Eleanor Quint</subtitle>
-  <updated>2021-12-31T13:35:05-06:00</updated>
+  <updated>2022-01-04T11:26:23-06:00</updated>
   <author>
     <name>Eleanor Quint</name>
     <uri>http://localhost:4000/</uri>
@@ -13,10 +13,44 @@
   <link rel="alternate" type="text/html" hreflang="en"
     href="http://localhost:4000/"/>
   <generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator>
-  <rights> © 2021 Eleanor Quint </rights>
+  <rights> © 2022 Eleanor Quint </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Following Along with UIC's CS 598 PROOF AUTOMATION</title>
+    <link href="http://localhost:4000/posts/proof_automation/" rel="alternate" type="text/html" title="Following Along with UIC's CS 598 PROOF AUTOMATION" />
+    <published>2022-01-03T00:00:00-06:00</published>
+  
+    <updated>2022-01-03T00:00:00-06:00</updated>
+  
+    <id>http://localhost:4000/posts/proof_automation/</id>
+    <content src="http://localhost:4000/posts/proof_automation/" />
+    <author>
+      <name>Eleanor Quint</name>
+    </author>
+
+  
+    
+    <category term="Proof Automation" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Dr. Talia Ringer is teaching a course on proof automation at the University of Illinois at Urbana-Champaign. I’ve been a programming language nerd since dabbling with Haskell and the like in undergrad, and I’m very interested in the whole area of “proving things about computation”. Naturally, this falls squarely into that intersection, so I’m going to be following along with the course as best ...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>

@@ -666,7 +666,7 @@
       data-toggle="tooltip"
       data-placement="bottom"
       title="Tue, Sep 21, 2021, 12:00 AM -0500"
-    >Sep 21</em>
+    >Sep 21, 2021</em>
 
       </span>
 
@@ -693,8 +693,8 @@
 
 <!-- return element -->
 <span class="readtime" data-toggle="tooltip" data-placement="bottom"
-  title="293 words">
-  <em>1 min</em> read</span>
+  title="417 words">
+  <em>2 min</em> read</span>
 
 
       <!-- page views -->
@@ -712,18 +712,32 @@
 
 <h3 id="motivation">Motivation<a href="#motivation" class="anchor"><i class="fas fa-hashtag"></i></a></h3></h3>
 
-<p>Star sets are a verification method created for calculating reachability<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>, i.e., answering the question of “if the set of all possible inputs is $X$, what are all possible outputs $Y$?”. The typical use of this question and answer in control is to decide whether the set of possible outputs overlaps at all with an unsafe set. Any non-empty intersection indicates an intervention to prevent the potentially unsafe action.</p>
+<p>Star sets are a verification method created for calculating reachability<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>, i.e., answering the question of “if the set of all possible inputs is $X$, what are all possible outputs $Y$?”.
+The typical use of this question and answer in control is to decide whether the set of possible outputs overlaps at all with an unsafe set.
+Any non-empty intersection indicates an intervention to prevent the potentially unsafe action.</p>
 
 <h3 id="definitions">Definitions<a href="#definitions" class="anchor"><i class="fas fa-hashtag"></i></a></h3></h3>
 
-<p>We’ll start by understanding what Star Sets are trying to accomplish, to represent neural network transformations on entire sets rather than individual inputs. The simplest case works best with DNNs defined only with fully connected (FC) layers and ReLU activations, so that’s what we’ll use in this tutorial. To establish some definitions, neural networks can be expressed as $y = f(x)$ where</p>
+<p>This section is going to use a lot of notation for readers who benefit from such things. If you’re interested in the main idea, don’t worry about the typeset math, just read the text and you’ll be able to understand everything that follows just as well.</p>
+
+<p>We’ll start by understanding what Star Sets are trying to accomplish, to represent neural network transformations on entire sets rather than individual inputs.
+The simplest case works best with DNNs defined only with fully connected (FC) layers and ReLU activations, so that’s what we’ll use in this tutorial.
+To establish some definitions, neural networks can be expressed as $y = f(x)$ where</p>
 
 \[x\in\mathbb{R}^m, y\in\mathbb{R}^n, f: \mathbb{R}^m\to\mathbb{R}^n\]
 
-<p>We’re interested in efficiently calculating $Y = f(X)$ where $f$ is the same, but we want to work with sets, 
-\(X\subseteq\mathbb{R}^m, Y=\{y|y=f(x), x\in X\}\)</p>
+<p>We’re interested in efficiently calculating $Y = f(X)$ where $f$ is the same, but instead of indiviual inputs, we want to work with sets,</p>
 
-<p>The question is how to represent the sets so that $Y$ can be calculated efficiently?</p>
+\[X\subseteq\mathbb{R}^m, Y=\{y|y=f(x), x\in X\}\]
+
+<p>The question is how to represent the sets so that $Y$ can be calculated efficiently? Because we’re only considering neural networks with FC layers and ReLU activations, we’ll rewrite our $n$-layer DNN definition as</p>
+
+\[\begin{aligned}
+f &amp;= f_n \circ f_{n-1} \circ\cdots\circ f_2\circ f_1 \\&amp;= \text{aff}_n\circ\text{ReLU}_{n-1}\circ\text{aff}_{n-1}\circ\cdots\circ\text{ReLU}_1\circ\text{aff}_1
+\end{aligned}\]
+
+<p>where $f_i$ is the $i$th layer of the network and the final layer of the network isn’t activated.
+Using a set as input to each layer, choosing ReLU activations means that each layer’s output set to being closed under affine and ReLU operations.</p>
 
 <h3 id="post-script">Post Script<a href="#post-script" class="anchor"><i class="fas fa-hashtag"></i></a></h3></h3>
 
@@ -760,10 +774,10 @@
     <i class="fa fa-tags fa-fw mr-1"></i>
       
       <a href="/tags/verification/"
-          class="post-tag no-text-decoration" >Verification</a>
+          class="post-tag no-text-decoration" >verification</a>
       
       <a href="/tags/star-sets/"
-          class="post-tag no-text-decoration" >Star Sets</a>
+          class="post-tag no-text-decoration" >star sets</a>
       
   </div>
   
@@ -878,6 +892,25 @@
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
       
         
         
@@ -906,10 +939,13 @@
 
     
       
-      <a class="post-tag" href="/tags/star-sets/">Star Sets</a>
+      <a class="post-tag" href="/tags/verification/">verification</a>
     
       
-      <a class="post-tag" href="/tags/verification/">Verification</a>
+      <a class="post-tag" href="/tags/proof-assistants/">proof assistants</a>
+    
+      
+      <a class="post-tag" href="/tags/star-sets/">star sets</a>
     
 
     </div>
@@ -968,6 +1004,19 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
     
 
 
@@ -983,11 +1032,59 @@
   
     
     
+      
+      
+    
+  
+    
+    
   
 
 
 
 
+
+  <div id="related-posts" class="mt-5 mb-2 mb-sm-4">
+    <h3 class="pt-2 mt-1 mb-4 ml-1"
+      data-toc-skip>Further Reading</h3>
+    <div class="card-deck mb-4">
+    
+      
+      
+      <div class="card">
+        <a href="/posts/proof_automation/">
+          <div class="card-body">
+            <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/timeago.js
+-->
+
+
+
+
+
+<em class="timeago small"
+    date="2022-01-03 00:00:00 -0600"
+    >Jan  3</em>
+
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Following Along with UIC's CS 598 PROOF AUTOMATION</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                Dr. Talia Ringer is teaching a course on proof automation at the University of Illinois at Urbana-Champaign. I’ve been a programming language nerd since dabbling with Haskell and the like in underg...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    
+    </div> <!-- .card-deck -->
+  </div> <!-- #related-posts -->
 
 
       
@@ -1005,10 +1102,10 @@
   
 
   
-  <span class="btn btn-outline-primary disabled"
+  <a href="/posts/proof_automation/" class="btn btn-outline-primary"
     prompt="Newer">
-    <p>-</p>
-  </span>
+    <p>Following Along with UIC's CS 598 PROOF AUTOMATION</p>
+  </a>
   
 
 </div>
@@ -1033,7 +1130,7 @@
   <div class="d-flex justify-content-between align-items-center text-muted">
     <div class="footer-left">
       <p class="mb-0">
-        © 2021
+        © 2022
         <a href="https://twitter.com/EtherealEq">Eleanor Quint</a>.
         
         <span data-toggle="tooltip" data-placement="top"
@@ -1090,6 +1187,25 @@
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
       
         
         
@@ -1118,10 +1234,13 @@
 
     
       
-      <a class="post-tag" href="/tags/star-sets/">Star Sets</a>
+      <a class="post-tag" href="/tags/verification/">verification</a>
     
       
-      <a class="post-tag" href="/tags/verification/">Verification</a>
+      <a class="post-tag" href="/tags/proof-assistants/">proof assistants</a>
+    
+      
+      <a class="post-tag" href="/tags/star-sets/">star sets</a>
     
 
     </div>
