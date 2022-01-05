@@ -34,7 +34,7 @@
 
   <!-- Begin Jekyll SEO tag v2.7.1 -->
 <meta name="generator" content="Jekyll v4.2.1" />
-<meta property="og:title" content="Following Along with UIC’s CS 598 PROOF AUTOMATION" />
+<meta property="og:title" content="Following Along with UIUC’s CS 598 PROOF AUTOMATION" />
 <meta property="og:locale" content="en" />
 <meta name="description" content="Dr. Talia Ringer is teaching a course on proof automation at the University of Illinois at Urbana-Champaign. I’ve been a programming language nerd since dabbling with Haskell and the like in undergrad, and I’m very interested in the whole area of “proving things about computation”. Naturally, this falls squarely into that intersection, so I’m going to be following along with the course as best as I can manage this semester. This ongoing blog post will be where I post my notes, thoughts, and some solutions (only the non-directly-copyable sort)." />
 <meta property="og:description" content="Dr. Talia Ringer is teaching a course on proof automation at the University of Illinois at Urbana-Champaign. I’ve been a programming language nerd since dabbling with Haskell and the like in undergrad, and I’m very interested in the whole area of “proving things about computation”. Naturally, this falls squarely into that intersection, so I’m going to be following along with the course as best as I can manage this semester. This ongoing blog post will be where I post my notes, thoughts, and some solutions (only the non-directly-copyable sort)." />
@@ -44,15 +44,15 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-01-03T00:00:00-06:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Following Along with UIC’s CS 598 PROOF AUTOMATION" />
+<meta property="twitter:title" content="Following Along with UIUC’s CS 598 PROOF AUTOMATION" />
 <meta name="twitter:site" content="@EtherealEq" />
 <meta name="google-site-verification" content="google_meta_tag_verification" />
 <script type="application/ld+json">
-{"headline":"Following Along with UIC’s CS 598 PROOF AUTOMATION","dateModified":"2022-01-03T00:00:00-06:00","datePublished":"2022-01-03T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/proof_automation/"},"url":"http://localhost:4000/posts/proof_automation/","@type":"BlogPosting","description":"Dr. Talia Ringer is teaching a course on proof automation at the University of Illinois at Urbana-Champaign. I’ve been a programming language nerd since dabbling with Haskell and the like in undergrad, and I’m very interested in the whole area of “proving things about computation”. Naturally, this falls squarely into that intersection, so I’m going to be following along with the course as best as I can manage this semester. This ongoing blog post will be where I post my notes, thoughts, and some solutions (only the non-directly-copyable sort).","@context":"https://schema.org"}</script>
+{"headline":"Following Along with UIUC’s CS 598 PROOF AUTOMATION","dateModified":"2022-01-03T00:00:00-06:00","datePublished":"2022-01-03T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/proof_automation/"},"url":"http://localhost:4000/posts/proof_automation/","@type":"BlogPosting","description":"Dr. Talia Ringer is teaching a course on proof automation at the University of Illinois at Urbana-Champaign. I’ve been a programming language nerd since dabbling with Haskell and the like in undergrad, and I’m very interested in the whole area of “proving things about computation”. Naturally, this falls squarely into that intersection, so I’m going to be following along with the course as best as I can manage this semester. This ongoing blog post will be where I post my notes, thoughts, and some solutions (only the non-directly-copyable sort).","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>Following Along with UIC's CS 598 PROOF AUTOMATION | Eleanor Quint
+  <title>Following Along with UIUC's CS 598 PROOF AUTOMATION | Eleanor Quint
   </title>
 
   <!--
@@ -430,7 +430,7 @@
         
 
           
-            <span>Following Along with UIC's CS 598 PROOF AUTOMATION</span>
+            <span>Following Along with UIUC's CS 598 PROOF AUTOMATION</span>
           
 
         
@@ -660,7 +660,7 @@
 
 
 
-<h1 data-toc-skip>Following Along with UIC's CS 598 PROOF AUTOMATION</h1>
+<h1 data-toc-skip>Following Along with UIUC's CS 598 PROOF AUTOMATION</h1>
 
 <div class="post-meta text-muted">
 
@@ -726,7 +726,7 @@
 
 <!-- return element -->
 <span class="readtime" data-toggle="tooltip" data-placement="bottom"
-  title="1032 words">
+  title="1050 words">
   <em>5 min</em> read</span>
 
 
@@ -740,6 +740,8 @@
 
 <div class="post-content">
   <p><a href="https://dependenttyp.es/">Dr. Talia Ringer</a> is teaching a <a href="https://dependenttyp.es/classes/598sp2022.html">course on proof automation</a> at the University of Illinois at Urbana-Champaign. I’ve been a programming language nerd since dabbling with Haskell and the like in undergrad, and I’m very interested in the whole area of “proving things about computation”. Naturally, this falls squarely into that intersection, so I’m going to be following along with the course as best as I can manage this semester. This ongoing blog post will be where I post my notes, thoughts, and some solutions (only the non-directly-copyable sort).</p>
+
+<p>If you’re interested in a discussion on anything in this post, please reply to my <a href="https://twitter.com/EtherealEq/status/1478588113601679360">relevant tweet</a>.</p>
 
 <h2 id="homework-1">Homework 1<a href="#homework-1" class="anchor"><i class="fas fa-hashtag"></i></a></h2></h2>
 
@@ -772,7 +774,7 @@
 
 <h4 id="response-1">Response:<a href="#response-1" class="anchor"><i class="fas fa-hashtag"></i></a></h4></h4>
 
-<p>I like this prompt because it is sufficiently think account to make an ethical argument I’ve been fencing with my advisor over for years. I believe that a person who contributes to the development of a technology that can forseeably be used for a specific set of ends, is responsible for those ends to a degree proportional to how much their efforts hastened those ends. Put simply, if your work makes something happen that wouldn’t have otherwise happened, you are partially to blame. This is the tip of my spear when arguing that technology isn’t neutral, and something I should expand on in another blog post sometime.</p>
+<p>I like this prompt because it is a sufficiently thick account to make an ethical argument I’ve been fencing with my advisor over for years. I believe that a person who contributes to the development of a technology that can forseeably be used for a specific set of ends, is responsible for those ends to a degree proportional to how much their efforts hastened those ends. Put simply, if your work makes something happen that wouldn’t have otherwise happened, you are partially to blame. This is the tip of my spear when arguing that technology isn’t neutral, and something I should expand on in another blog post sometime.</p>
 
 <p>The immediate relevancy to the question at hand is that my contribution to the safety of military drones, which are almost certainly going to be used to kill more than any other purpose (despite all those ads trying to convince of the contrary), plays a role in my partial culpability for those killings. Obviously there are many details that can be explored, including the positive outcomes of the work, but I’m not personally interested in moral calculus. I’d rather not contribute to killings where I can avoid it, as a rule. I could not take the money, even if it meant a rockier path down the same research road.</p>
 
@@ -834,19 +836,19 @@
 
     
       
-        <a href="https://twitter.com/intent/tweet?text=Following Along with UIC's CS 598 PROOF AUTOMATION - Eleanor Quint&url=http://localhost:4000/posts/proof_automation/" data-toggle="tooltip" data-placement="top"
+        <a href="https://twitter.com/intent/tweet?text=Following Along with UIUC's CS 598 PROOF AUTOMATION - Eleanor Quint&url=http://localhost:4000/posts/proof_automation/" data-toggle="tooltip" data-placement="top"
           title="Twitter" target="_blank" rel="noopener" aria-label="Twitter">
           <i class="fa-fw fab fa-twitter"></i>
         </a>
     
       
-        <a href="https://www.facebook.com/sharer/sharer.php?title=Following Along with UIC's CS 598 PROOF AUTOMATION - Eleanor Quint&u=http://localhost:4000/posts/proof_automation/" data-toggle="tooltip" data-placement="top"
+        <a href="https://www.facebook.com/sharer/sharer.php?title=Following Along with UIUC's CS 598 PROOF AUTOMATION - Eleanor Quint&u=http://localhost:4000/posts/proof_automation/" data-toggle="tooltip" data-placement="top"
           title="Facebook" target="_blank" rel="noopener" aria-label="Facebook">
           <i class="fa-fw fab fa-facebook-square"></i>
         </a>
     
       
-        <a href="https://telegram.me/share?text=Following Along with UIC's CS 598 PROOF AUTOMATION - Eleanor Quint&url=http://localhost:4000/posts/proof_automation/" data-toggle="tooltip" data-placement="top"
+        <a href="https://telegram.me/share?text=Following Along with UIUC's CS 598 PROOF AUTOMATION - Eleanor Quint&url=http://localhost:4000/posts/proof_automation/" data-toggle="tooltip" data-placement="top"
           title="Telegram" target="_blank" rel="noopener" aria-label="Telegram">
           <i class="fa-fw fab fa-telegram"></i>
         </a>
