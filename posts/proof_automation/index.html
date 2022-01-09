@@ -661,6 +661,50 @@
       
 
     
+      
+
+      
+      
+
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+
+      
+
+    
 
     
 
@@ -748,8 +792,8 @@
 
 <!-- return element -->
 <span class="readtime" data-toggle="tooltip" data-placement="bottom"
-  title="1376 words">
-  <em>7 min</em> read</span>
+  title="1681 words">
+  <em>9 min</em> read</span>
 
 
       <!-- page views -->
@@ -804,6 +848,26 @@
 
 <h2 id="homework-3">Homework 3<a href="#homework-3" class="anchor"><i class="fas fa-hashtag"></i></a></h2></h2>
 
+<p>Chapter 4 of QED at Large: A Survey of Engineering of Formally Verified Software by Talia Ringer, Karl Palmskog, Ilya Sergey, Milos Gligoric, and Zachary Tatlock.</p>
+
+<h4 id="homework-prompt-2">Homework prompt:<a href="#homework-prompt-2" class="anchor"><i class="fas fa-hashtag"></i></a></h4></h4>
+
+<p>Imagine that you are designing a new proof assistant, from the foundations up. What do you consider in your design of the foundations, and why?</p>
+
+<h4 id="response-2">Response:<a href="#response-2" class="anchor"><i class="fas fa-hashtag"></i></a></h4></h4>
+
+<p>I think I would design it from the ground up for use as an extension of common programming languages to support an alternative to testing to rule out entire classes of bugs at compile time. This is directly inspired by how Rust extended its type system to handle lifetimes, basically ruling out errors associated with pointer targets prematurely going out of scope. With a minimal amount of help from the programmer, static analysis can prove an awesome amount about a program. I’ve no doubt that with good proof assistance, that much more could be proven at compile time with minimal programmer effort and maximal impact.</p>
+
+<p>With respect to the considerations required to support this usage, I’m really unsure of what choices would best support this. I’m hoping that’s what I can learn in this course, because I’d really love to help build systems like this. I think they could work wonders in creating safe software for the real world.</p>
+
+<h4 id="bonus-prompt">Bonus prompt:<a href="#bonus-prompt" class="anchor"><i class="fas fa-hashtag"></i></a></h4></h4>
+
+<p>Alan Turing wrote the first proof of program correctness, and yet Hoare and Floyd are largely credited for the earliest verification work. Why do you think this is?</p>
+
+<h4 id="response-3">Response<a href="#response-3" class="anchor"><i class="fas fa-hashtag"></i></a></h4></h4>
+
+<p>Same reason why we don’t credit Euler with everything in mathematics. If we named everything he touched on first after him, we’d have to start subtitling theorems. It’s simply well understood that he’s the ancestor of a huge amount of mathematics, like Alan Turing is the progenitor of most of computer science. (Side note: Alan Turing is one of my heroes)</p>
+
 <h2 id="homework-4">Homework 4<a href="#homework-4" class="anchor"><i class="fas fa-hashtag"></i></a></h2></h2>
 
 <p>First class excercise with Agda. To kick things off, I’d like to re-iterate my hatred of Emacs and my wishes that there was another good medium for working with the likes of Lisp and now Agda. Setting everything up was pretty easy until I had to figure out how to do anything at all with Emacs. I’m a Vim gal, but I’ve always been pretty flexible with my editors. All I’ll say is that everyone I know who uses Emacs is in wrist braces for carpal tunnel-type symptoms.</p>
@@ -818,7 +882,7 @@ you’d had more automation to help you out?</p>
 
 <p>I got nerd sniped really hard by this assignment. I got stuck at the last hole because I didn’t really understand how to use substitution as defined (mostly because the notion of a “property” isn’t clear). I think the lack of references to Agda syntax and basics is a definite gap in this assignment. I know Haskell pretty well, but that only goes so far here.</p>
 
-<p>The fact that we can prove so much so easily is really neat here. I’m used to proofs being numerical and reqruiring a lot of effort, so being able to write proofs with small, algebraic terms is fun.</p>
+<p>The fact that we can prove so much so easily is really neat here. I’m used to proofs being numerical and requiring a lot of effort, so being able to write proofs with small, algebraic terms is fun.</p>
 
 </div>
 
