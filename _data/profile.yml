@@ -15,17 +15,20 @@ twitter: EtherealEq
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    I earned my PhD from the University of Nebraska-Lincoln in December 2025,
-    studying safe and trustworthy reinforcement learning and machine learning,
-    advised by Stephen Scott. My research spans verification, interpretability,
-    generative models, and self-supervised learning, with applications in
-    materials science, chemistry, robotics, computer security, and medicine.
+    I am a machine learning researcher interested in making learning systems
+    more reliable, particularly through epistemic uncertainty estimation,
+    safe reinforcement learning, and decision-making under uncertainty.
+    My recent work, <a href="https://arxiv.org/abs/2605.01632" target="_blank">Perturb and Correct</a>
+    (NeurIPS 2026), develops an efficient way to construct post-hoc ensembles
+    from a single trained model.
   </p>
   <p>
-    From 2022 to 2025 I was a Research Scientist at
-    <a href="https://www.phaidra.ai/" target="_blank">Phaidra</a>, applying
-    reinforcement learning to industrial control. I am currently open to new
-    opportunities. Please feel free to reach out about collaboration or my work.
+    I earned my PhD in Computer Science from the University of Nebraska-Lincoln
+    in December 2025, advised by Stephen Scott. Previously, I was a Research
+    Scientist at <a href="https://www.phaidra.ai/" target="_blank">Phaidra</a>
+    (2022–2025), working on machine learning and optimization for industrial control.
+    I am seeking research scientist and research engineer opportunities, and welcome
+    conversations about research and collaboration.
   </p>
 
 portrait_url: /assets/images/photos/eleanor_quint.png
